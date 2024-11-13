@@ -24,13 +24,13 @@
 
 //uncomment the motor driver you're using
 // #define USE_GENERIC_2_IN_MOTOR_DRIVER      // Motor drivers with 2 Direction Pins(INA, INB) and 1 PWM(ENABLE) pin ie. L298, L293, VNH5019
-// #define USE_GENERIC_1_IN_MOTOR_DRIVER   // Motor drivers with 1 Direction Pin(INA) and 1 PWM(ENABLE) pin.
-#define USE_BTS7960_MOTOR_DRIVER        // BTS7970 Motor Driver using A4950 (<40V) module or DRV8833 (<10V)
+#define USE_GENERIC_1_IN_MOTOR_DRIVER   // Motor drivers with 1 Direction Pin(INA) and 1 PWM(ENABLE) pin.
+// #define USE_BTS7960_MOTOR_DRIVER        // BTS7970 Motor Driver using A4950 (<40V) module or DRV8833 (<10V)
 // #define USE_ESC_MOTOR_DRIVER            // Motor ESC for brushless motors
 
 //uncomment the IMU you're using
 // #define USE_GY85_IMU
-// #define USE_MPU6050_IMU
+#define USE_MPU6050_IMU
 // #define USE_MPU9150_IMU
 // #define USE_MPU9250_IMU
 // #define USE_QMI8658_IMU
@@ -189,14 +189,14 @@ ROBOT ORIENTATION
   #define PWM_MIN -PWM_MAX
 #endif
 
-#define AGENT_IP { 192, 168, 1, 100 }  // eg IP of the desktop computer
+#define AGENT_IP { 192, 168, 16, 206 }  // eg IP of the desktop computer
 #define AGENT_PORT 8888
 // Enable WiFi with null terminated list of multiple APs SSID and password
-#define WIFI_AP_LIST {{"WIFI_SSID", "WIFI_PASSWORD"}, {NULL}}
+#define WIFI_AP_LIST {{"asdasdasd", "BuCjAVgtJWw46QU"}, {NULL}}
 #define WIFI_MONITOR 2 // min. period to send wifi signal strength to syslog
 #define USE_ARDUINO_OTA
 #define USE_SYSLOG
-#define SYSLOG_SERVER { 192, 168, 1, 100 }  // eg IP of the desktop computer
+#define SYSLOG_SERVER { 192, 168, 16, 206 }  // eg IP of the desktop computer
 #define SYSLOG_PORT 514
 #define DEVICE_HOSTNAME "esp32s3_wifi"
 #define APP_NAME "hardware"
@@ -204,11 +204,11 @@ ROBOT ORIENTATION
 #define LIDAR_RXD 2
 #define LIDAR_SERIAL 1 // uart number
 #define LIDAR_BAUDRATE 230400
-#define LIDAR_SERVER { 192, 168, 1, 100 }  // eg IP of the desktop computer
+#define LIDAR_SERVER { 192, 168, 16, 206 }  // eg IP of the desktop computer
 #define LIDAR_PORT 8889
 #define BAUDRATE 921600
-#define SDA_PIN 8 // specify I2C pins
-#define SCL_PIN 9
+#define SDA_PIN 15 // specify I2C pins
+#define SCL_PIN 16
 #define NODE_NAME "esp32s3_wifi"
 // #define TOPIC_PREFIX "esp32s3_wifi/"
 // #define CONTROL_TIMER 20
