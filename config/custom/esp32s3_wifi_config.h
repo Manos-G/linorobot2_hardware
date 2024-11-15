@@ -68,8 +68,8 @@ ROBOT ORIENTATION
 #define MOTOR_OPERATING_VOLTAGE 5          // motor's operating voltage (used to calculate max RPM)
 #define MOTOR_POWER_MAX_VOLTAGE 5          // max voltage of the motor's power source (used to calculate max RPM)
 #define MOTOR_POWER_MEASURED_VOLTAGE 5     // current voltage reading of the power connected to the motor (used for calibration)
-#define COUNTS_PER_REV1 600                 // wheel1 encoder's no of ticks per rev
-#define COUNTS_PER_REV2 600                 // wheel2 encoder's no of ticks per rev
+#define COUNTS_PER_REV1 300                 // wheel1 encoder's no of ticks per rev
+#define COUNTS_PER_REV2 300                 // wheel2 encoder's no of ticks per rev
 #define COUNTS_PER_REV3 450                 // wheel3 encoder's no of ticks per rev
 #define COUNTS_PER_REV4 450                 // wheel4 encoder's no of ticks per rev
 #define WHEEL_DIAMETER 0.0398               // wheel's diameter in meters
