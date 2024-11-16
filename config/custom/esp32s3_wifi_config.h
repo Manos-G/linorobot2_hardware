@@ -65,7 +65,7 @@ ROBOT ORIENTATION
 //define your robot' specs here
 #define MOTOR_MAX_RPM 420                   // motor's max RPM
 #define MAX_RPM_RATIO 0.85                  // max RPM allowed for each MAX_RPM_ALLOWED = MOTOR_MAX_RPM * MAX_RPM_RATIO
-#define MOTOR_OPERATING_VOLTAGE 5          // motor's operating voltage (used to calculate max RPM)
+#define MOTOR_OPERATING_VOLTAGE 6          // motor's operating voltage (used to calculate max RPM)
 #define MOTOR_POWER_MAX_VOLTAGE 5          // max voltage of the motor's power source (used to calculate max RPM)
 #define MOTOR_POWER_MEASURED_VOLTAGE 5     // current voltage reading of the power connected to the motor (used for calibration)
 #define COUNTS_PER_REV1 300                 // wheel1 encoder's no of ticks per rev
@@ -189,14 +189,14 @@ ROBOT ORIENTATION
   #define PWM_MIN -PWM_MAX
 #endif
 
-#define AGENT_IP { 192, 168, 16, 206 }  // eg IP of the desktop computer
+#define AGENT_IP { 192, 168, 1, 17 }  // eg IP of the desktop computer
 #define AGENT_PORT 8888
 // Enable WiFi with null terminated list of multiple APs SSID and password
 #define WIFI_AP_LIST {{"asdasdasd", "BuCjAVgtJWw46QU"}, {NULL}}
 #define WIFI_MONITOR 2 // min. period to send wifi signal strength to syslog
 #define USE_ARDUINO_OTA
 #define USE_SYSLOG
-#define SYSLOG_SERVER { 192, 168, 16, 206 }  // eg IP of the desktop computer
+#define SYSLOG_SERVER { 192, 168, 1, 17 }  // eg IP of the desktop computer
 #define SYSLOG_PORT 514
 #define DEVICE_HOSTNAME "esp32s3_wifi"
 #define APP_NAME "hardware"
@@ -204,7 +204,7 @@ ROBOT ORIENTATION
 #define LIDAR_RXD 2
 #define LIDAR_SERIAL 1 // uart number
 #define LIDAR_BAUDRATE 230400
-#define LIDAR_SERVER { 192, 168, 16, 206 }  // eg IP of the desktop computer
+#define LIDAR_SERVER { 192, 168, 1, 17 }  // eg IP of the desktop computer
 #define LIDAR_PORT 8889
 #define BAUDRATE 921600
 #define SDA_PIN 15 // specify I2C pins
